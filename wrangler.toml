@@ -10,3 +10,10 @@ minify = true
 
 # Use the new Workers + Assets to host the static frontend files
 assets = { directory = ".worker-next/assets", binding = "ASSETS" }
+
+[ai]
+binding = "AI"
+
+[[vectorize]]
+binding = "VECTORIZE" # available in your Worker on env.VECTORIZE
+index_name = "tweets"
